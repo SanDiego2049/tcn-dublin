@@ -13,32 +13,32 @@ const CONFIG = {
 // The grid below renders straight from this list instead of
 // repeating near-identical markup in the HTML.
 // ---------------------------------------------------------------
-const SCHEDULE = [
-  {
-    day: "Wed",
-    time: "06:45pm",
-    title: "Mid-week Service",
-    blurb: "Diving deeper into the word of God with Pastor 'Poju Oyemade.",
-  },
-  {
-    day: "Thur",
-    time: "08:15pm",
-    title: "Thursday Family Prayers",
-    blurb: "A time to intercede for our family and friends.",
-  },
-  {
-    day: "Sat",
-    time: "06:00am",
-    title: "Early Morning Prayers",
-    blurb: "We meet virtually to worship and pray to our Shepherd.",
-  },
-  {
-    day: "Sun",
-    time: "10:00am",
-    title: "Sunday Service",
-    blurb: "Come enjoy the Lord's presence and let's worship HIM together.",
-  },
-];
+// const SCHEDULE = [
+//   {
+//     day: "Wed",
+//     time: "06:45pm",
+//     title: "Mid-week Service",
+//     blurb: "Diving deeper into the word of God with Pastor 'Poju Oyemade.",
+//   },
+//   {
+//     day: "Thur",
+//     time: "08:15pm",
+//     title: "Thursday Family Prayers",
+//     blurb: "A time to intercede for our family and friends.",
+//   },
+//   {
+//     day: "Sat",
+//     time: "06:00am",
+//     title: "Early Morning Prayers",
+//     blurb: "We meet virtually to worship and pray to our Shepherd.",
+//   },
+//   {
+//     day: "Sun",
+//     time: "10:00am",
+//     title: "Sunday Service",
+//     blurb: "Come enjoy the Lord's presence and let's worship HIM together.",
+//   },
+// ];
 
 function applyConfigLinks() {
   // querySelectorAll grabs every matching element, so adding a new
@@ -52,23 +52,23 @@ function applyConfigLinks() {
   });
 }
 
-function renderSchedule() {
-  const grid = document.querySelector(".js-schedule-grid");
-  if (!grid) return;
+// function renderSchedule() {
+//   const grid = document.querySelector(".js-schedule-grid");
+//   if (!grid) return;
 
-  grid.innerHTML = SCHEDULE.map(
-    (item) => `
-    <div class="schedule-card">
-      <div class="schedule-day">
-        <span class="badge">${item.day}</span>
-        <span class="time"><i data-lucide="clock"></i> ${item.time}</span>
-      </div>
-      <h3>${item.title}</h3>
-      <p>${item.blurb}</p>
-    </div>
-  `,
-  ).join("");
-}
+//   grid.innerHTML = SCHEDULE.map(
+//     (item) => `
+//     <div class="schedule-card">
+//       <div class="schedule-day">
+//         <span class="badge">${item.day}</span>
+//         <span class="time"><i data-lucide="clock"></i> ${item.time}</span>
+//       </div>
+//       <h3>${item.title}</h3>
+//       <p>${item.blurb}</p>
+//     </div>
+//   `,
+//   ).join("");
+// }
 
 document.addEventListener("DOMContentLoaded", () => {
   applyConfigLinks();
