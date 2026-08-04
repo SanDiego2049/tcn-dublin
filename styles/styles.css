@@ -315,7 +315,6 @@ section h2 {
 /* object-fit:cover crops to fill the square instead of stretching non-square source images */
 .about-item img {
   width: 100%;
-  aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 4px;
   margin-bottom: 22px;
@@ -556,6 +555,5 @@ footer {
 @media (max-width: 370px) {
   .logo-slot img {
     height: 120px;
-    
   }
 }
