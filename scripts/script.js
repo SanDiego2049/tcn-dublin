@@ -72,6 +72,6 @@ function applyConfigLinks() {
 
 document.addEventListener("DOMContentLoaded", () => {
   applyConfigLinks();
-  renderSchedule();
+  // renderSchedule();
   lucide.createIcons();
 });
